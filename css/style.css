@@ -1,0 +1,434 @@
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+body {
+    background-color: #fff7fb;
+    color: #393039;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Títulos das seções */
+.titulo-secao {
+    color: #910c64;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   MENU DE NAVEGAÇÃO
+======================================== */
+
+.navbar-personalizada {
+    background-color: #910c64;
+    padding: 18px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-personalizada .navbar-brand {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.navbar-personalizada .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+
+.navbar-personalizada .nav-link:hover {
+    color: #ffd6ec;
+    transform: translateY(-2px);
+}
+
+.navbar-personalizada .navbar-brand:hover {
+    color: #ffd6ec;
+}
+
+
+/* ========================================
+   CARROSSEL
+======================================== */
+
+#carouselApresentacao .carousel-item {
+    height: 300px;
+    background-color: #ddafc8;
+}
+
+#carouselApresentacao .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#carouselApresentacao .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+/* ========================================
+   SEÇÃO 1 - APRESENTAÇÃO
+======================================== */
+
+.secao-apresentacao {
+    background-color: #fff7fb;
+    padding: 70px 0;
+}
+
+.card-apresentacao {
+    max-width: 950px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(139, 18, 85, 0.18);
+}
+
+.imagem-apresentacao {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card-apresentacao .card-body {
+    padding: 35px;
+}
+
+.card-apresentacao .card-title {
+    color: #910c64;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.card-apresentacao .card-text {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   SEÇÃO 2 - FAMÍLIA E PET
+======================================== */
+
+.secao-familia {
+    background-color: #f9eaf2;
+    padding: 70px 0;
+}
+
+.card-familia {
+    max-width: 950px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(139, 18, 85, 0.18);
+}
+
+.card-familia .card-body {
+    padding: 35px;
+}
+
+.card-familia .card-title {
+    color: #910c64;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+}
+
+.card-familia .card-text {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.imagem-familia-container {
+    text-align: center;
+}
+
+.imagem-familia {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.legenda-familia {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   SEÇÃO 3 - SOBRE MIM
+======================================== */
+
+.secao-sobre {
+    background-color: #fff7fb;
+    padding: 70px 0;
+}
+
+.card-sobre {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(139, 18, 85, 0.18);
+}
+
+.imagem-sobre {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.imagens-amizades img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-sobre .card-body {
+    padding: 25px;
+}
+
+.card-sobre .card-title {
+    color: #910c64;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.card-sobre .card-text {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   EFEITOS DOS CARDS
+======================================== */
+
+.card-apresentacao,
+.card-familia,
+.card-sobre {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-apresentacao:hover,
+.card-familia:hover,
+.card-sobre:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 25px rgba(145, 12, 100, 0.25);
+}
+
+/* Pequeno efeito nas imagens */
+.card-familia img,
+.card-sobre img {
+    transition: transform 0.4s ease;
+}
+
+.card-familia:hover img,
+.card-sobre:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ========================================
+   SEÇÃO 4 - CONTATO
+======================================== */
+
+.secao-contato {
+    background-color: #f9eaf2;
+    padding: 70px 0;
+}
+
+.card-contato {
+    max-width: 750px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 18px rgba(139, 18, 85, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-contato .card-body {
+    padding: 35px;
+}
+
+.card-contato .card-title {
+    color: #910c64;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+.card-contato p {
+    color: #777777;
+}
+
+.card-contato .form-label {
+    color: #6e174f;
+    font-weight: bold;
+}
+
+.card-contato .form-control {
+    border: 1px solid #e5bfd4;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fffafd;
+    transition: 0.3s ease;
+}
+
+.card-contato .form-control:focus {
+    border-color: #910c64;
+    box-shadow: 0 0 0 0.2rem rgba(145, 12, 100, 0.15);
+    background-color: #ffffff;
+}
+
+/* Botão de enviar */
+.btn-enviar {
+    background-color: #910c64;
+    color: #ffffff;
+    border: none;
+    padding: 11px 30px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #690849;
+    color: #ffffff;
+    transform: scale(1.04);
+}
+
+/* Mensagens de validação */
+.invalid-feedback {
+    font-size: 13px;
+}
+
+
+/* ========================================
+   MODAL DE SUCESSO
+======================================== */
+
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #910c64;
+    color: #ffffff;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-body h4 {
+    color: #910c64;
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.rodape {
+    background-color: #910c64;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 0;
+}
+
+.rodape h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.rodape p {
+    margin-bottom: 12px;
+}
+
+.rodape a {
+    color: #ffd6ec;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.rodape a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.rodape hr {
+    border-color: rgba(255, 255, 255, 0.4);
+    margin: 25px 0;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE - CELULARES
+======================================== */
+
+@media (max-width: 768px) {
+
+    #carouselApresentacao .carousel-item {
+        height: 450px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .titulo-secao {
+        font-size: 1.7rem;
+    }
+
+    .secao-apresentacao,
+    .secao-familia,
+    .secao-sobre,
+    .secao-contato {
+        padding: 45px 15px;
+    }
+
+    .imagem-apresentacao {
+        height: 300px;
+    }
+
+    .card-apresentacao .card-body,
+    .card-familia .card-body,
+    .card-sobre .card-body,
+    .card-contato .card-body {
+        padding: 22px;
+    }
+
+    .imagem-familia {
+        height: 280px;
+    }
+
+    .imagem-sobre,
+    .imagens-amizades img {
+        height: 230px;
+    }
+
+    .navbar-personalizada .navbar-brand {
+        font-size: 21px;
+    }
+
+}

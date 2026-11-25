@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Site</title>
+    <title>Sobre mim | Maria Eduarda</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -43,62 +43,67 @@
     </nav>
     <!-- Fim do Menu de Navegação -->
     <!-- Inicio do Carrossel -->
-    <div id="carouselApresentacao" class="carousel slide">
-        <!-- Tag do bootstrap de indicadores para selecionar cada slide -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Apresentação">
+    <section id="inicio">
+        <div id="carouselApresentacao" class="carousel slide">
+            <!-- Tag do bootstrap de indicadores para selecionar cada slide -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Apresentação">
+                </button>
+                <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="1"
+                    aria-label="Minha Família"></button>
+                <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="2"
+                    aria-label="Sobre Mim"></button>
+            </div>
+            <!--Class pronta que agrupa as imagens -->
+            <div class="carousel-inner">
+                <!-- PRIMEIRO SLIDE -->
+                <!-- active: define o primeiro slide como visível inicialmente -->
+                <div class="carousel-item active">
+                    <img src="../img/1000349430.jpg" class="d-block w-100" alt="Imagem de apresentação">
+                    <!--legenda sobre a imagem -->
+                    <div class="carousel-caption">
+                        <h5>Apresentação</h5>
+                        <p>Um pouco sobre mim e minha história.</p>
+                    </div>
+                </div>
+                <!-- SEGUNDO SLIDE -->
+                <div class="carousel-item">
+                    <img src="../img/minha-familia.jpeg" class="d-block w-100" alt="Imagem da minha família">
+                    <!-- Legenda do segundo slide -->
+                    <div class="carousel-caption">
+                        <h5>Minha Família</h5>
+                        <p>Conheça um pouco sobre minha família.</p>
+                    </div>
+                </div>
+                <!-- TERCEIRO SLIDE -->
+                <div class="carousel-item">
+                    <img src="../img/eu2.jpeg" class="d-block w-100" alt="Imagem sobre mim">
+                    <!-- Legenda do tereceiro slide -->
+                    <div class="carousel-caption">
+                        <h5>Sobre Mim</h5>
+                        <p>Meus interesses, gostos e um pouco da minha personalidade.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- botão pronto para voltar ao slide anterior -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselApresentacao"
+                data-bs-slide="prev">
+                <!-- Ícone da seta para esquerda -->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- Texto acessivel para leitores de tela -->
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="1"
-                aria-label="Minha Família"></button>
-            <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="2" aria-label="Sobre Mim"></button>
+            <!-- botão para avançar ao próximo slide -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselApresentacao"
+                data-bs-slide="next">
+                <!-- Ícone da seta para direita -->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- Texto acessivel para leitores de tela -->
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
-        <!--Class pronta que agrupa as imagens -->
-        <div class="carousel-inner">
-            <!-- PRIMEIRO SLIDE -->
-            <!-- active: define o primeiro slide como visível inicialmente -->
-            <div class="carousel-item active">
-                <img src="../img/1000349430.jpg" class="d-block w-100" alt="Imagem de apresentação">
-                <!--legenda sobre a imagem -->
-                <div class="carousel-caption">
-                    <h5>Apresentação</h5>
-                    <p>Um pouco sobre mim e minha história.</p>
-                </div>
-            </div>
-            <!-- SEGUNDO SLIDE -->
-            <div class="carousel-item">
-                <img src="../img/minha-familia.jpeg" class="d-block w-100" alt="Imagem da minha família">
-                <!-- Legenda do segundo slide -->
-                <div class="carousel-caption">
-                    <h5>Minha Família</h5>
-                    <p>Conheça um pouco sobre minha família.</p>
-                </div>
-            </div>
-            <!-- TERCEIRO SLIDE -->
-            <div class="carousel-item">
-                <img src="../img/eu2.jpeg" class="d-block w-100" alt="Imagem sobre mim">
-                <!-- Legenda do tereceiro slide -->
-                <div class="carousel-caption">
-                    <h5>Sobre Mim</h5>
-                    <p>Meus interesses, gostos e um pouco da minha personalidade.</p>
-                </div>
-            </div>
-        </div>
-        <!-- botão pronto para voltar ao slide anterior -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselApresentacao" data-bs-slide="prev">
-            <!-- Ícone da seta para esquerda -->
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <!-- Texto acessivel para leitores de tela -->
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <!-- botão para avançar ao próximo slide -->
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselApresentacao" data-bs-slide="next">
-            <!-- Ícone da seta para direita -->
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <!-- Texto acessivel para leitores de tela -->
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
+    </section>
     <!-- Seção 1- Apresentação -->
     <section id="apresentacao" class="secao-apresentacao">
         <!-- Container do Bootstrap -->
@@ -122,7 +127,7 @@
                             <h3 class="card-title">Olá, seja bem-vindo(a) ao meu site pessoal!</h3>
                             <!-- Class pronta para o texto do card -->
                             <p class="card-text">
-                                Meu nome é Maria Eduarda Sanagioto, 
+                                Meu nome é Maria Eduarda Sanagioto,
                                 tenho 17 anos, e sou de Passo Fundo.
                                 Desde 2024, estudo no IFRS Campus
                                 Sertão, onde sou residente durante
@@ -130,13 +135,13 @@
                             </p>
                             <p class="card-text">
                                 Ao longo de 3 anos dentro do Campus
-                                tive a oportunidade de conhecer pessoas 
+                                tive a oportunidade de conhecer pessoas
                                 diferentes, amadurecer e aprimorar meus
                                 conhecimentos de mundo.
                             </p>
                             <p class="card-text">
-                                Neste site, vou compartilhar um pouco 
-                                sobre quem sou, minha família e minhas 
+                                Neste site, vou compartilhar um pouco
+                                sobre quem sou, minha família e minhas
                                 vivências.
                             </p>
                         </div>
@@ -145,19 +150,20 @@
             </div>
         </div>
     </section>
-    <!-- Sessão 2 - Minha família -->
+    <!-- Seção 2 - Minha família -->
     <section id="familia" class="secao-familia">
-        <!-- Container Bootstrap -->
+        <!-- Container do bootstrap -->
         <div class="container">
             <!-- Título da seção -->
             <h2 class="titulo-secao">Minha Família</h2>
             <!-- Linha que organiza os dois cards -->
             <div class="row g-4">
-                <!-- PRIMEIRO CARD - FAMÍLIA -->
+                <!-- card da família-->
+                <!-- Divide a linha em duas colunas iguais -->
                 <div class="col-md-6">
-                    <!-- Card Bootstrap -->
+                    <!-- Card do bootstrap -->
                     <div class="card card-familia h-100">
-                        <!-- Imagem da família -->
+                        <!-- card familia é personalizado -->
                         <img src="../img/minha-familia.png" class="card-img-top imagem-familia"
                             alt="Foto da minha família">
                         <!-- Corpo do card -->
@@ -172,13 +178,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- SEGUNDO CARD - JAKE -->
+                <!-- Card do Jake -->
+                <!-- Também divide a linha em duas colunas iguais -->
                 <div class="col-md-6">
-                    <!-- Card Bootstrap -->
                     <div class="card card-familia h-100">
-                        <!-- Imagem do cachorro -->
                         <img src="../img/jake.jpeg" class="card-img-top imagem-familia" alt="Foto do meu cachorro Jake">
-                        <!-- Corpo do card -->
                         <div class="card-body">
                             <h3 class="card-title">Meu companheiro: Jake</h3>
                             <p class="card-text">
@@ -193,17 +197,16 @@
             </div>
         </div>
     </section>
-    <!-- Sessão 3 - Sobre Mim -->
+    <!-- Seção 3- Sobre mim -->
     <section id="sobre" class="secao-sobre">
         <div class="container">
-            <!-- Título da seção -->
             <h2 class="titulo-secao">Sobre Mim</h2>
             <!-- Linha que organiza os três cards -->
             <div class="row g-4">
-                <!-- CARD 1 - VIAGENS -->
+                <!-- Card das viagens -->
+                <!-- Em telas medias ocupa metade da linha; Em telas grandes ocupa 4 das 12 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-sobre h-100">
-                        <!-- Imagem de viagem -->
                         <img src="../img/viajar.jpeg" class="card-img-top imagem-sobre" alt="Foto de uma viagem">
                         <div class="card-body">
                             <h3 class="card-title">Gosto de viajar</h3>
@@ -216,10 +219,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- CARD 2 - AMIZADES -->
+                <!-- Card das amizades -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-sobre h-100">
-                        <!-- Duas imagens das amizades -->
                         <div class="row g-0 imagens-amizades">
                             <div class="col-6">
                                 <img src="../img/amigos1.jpeg" class="img-fluid" alt="Foto com meus amigos">
@@ -239,10 +241,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- CARD 3 - FORMATURA -->
+                <!-- Card da Formatura-->
                 <div class="col-md-12 col-lg-4">
                     <div class="card card-sobre h-100">
-                        <!-- Imagem da escola/formatura -->
                         <img src="../img/formatura.jpg" class="card-img-top imagem-sobre"
                             alt="Foto relacionada à minha formatura">
                         <div class="card-body">
@@ -271,16 +272,18 @@
             <div class="card card-contato">
                 <div class="card-body">
                     <h3 class="card-title text-center">Deixe uma mensagem!</h3>
-                    
                     <!-- Formulário -->
                     <form id="formContato" novalidate>
-                        <!-- Nome -->
+                        <!-- novalidate desativa a exibição automática das mensagens -->
+                        <!-- Campo do nome -->
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome completo</label>
                             <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                            <!-- required significa o preenchimento automático -->
                             <div class="invalid-feedback">
                                 Por favor, informe seu nome.
                             </div>
+                            <!-- Esse invalid mostra a mensagem quando o campo não é válido -->
                         </div>
                         <!-- E-mail -->
                         <div class="mb-3">
@@ -291,20 +294,12 @@
                                 Informe um e-mail válido.
                             </div>
                         </div>
-                        <!-- Assunto -->
-                        <div class="mb-3">
-                            <label for="assunto" class="form-label">Assunto</label>
-                            <input type="text" class="form-control" id="assunto" placeholder="Sobre o que deseja falar?"
-                                required>
-                            <div class="invalid-feedback">
-                                Informe o assunto.
-                            </div>
-                        </div>
                         <!-- Mensagem -->
                         <div class="mb-3">
                             <label for="mensagem" class="form-label">Mensagem</label>
                             <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem..."
                                 required></textarea>
+                            <!-- Rows define a quantidade incial de linhas -->
                             <div class="invalid-feedback">
                                 Escreva uma mensagem.
                             </div>
@@ -312,6 +307,7 @@
                         <!-- Botão -->
                         <div class="text-center">
                             <button type="submit" class="btn btn-enviar">Enviar mensagem</button>
+                            <!-- btn é do dotstrap, o outro foi criado -->
                         </div>
                     </form>
                 </div>
@@ -319,6 +315,7 @@
         </div>
     </section>
     <!-- MODAL DE SUCESSO -->
+    <!-- Classes prontas -->
     <div class="modal fade" id="modalSucesso" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -343,12 +340,11 @@
             <h5>Maria Eduarda</h5>
             <p>Um pouco sobre mim, minha família e minha história.</p>
             <a href="#inicio">Voltar ao início ↑</a>
+            <!-- Esse link direciona para o inicio do site novamente -->
             <hr>
             <p class="mb-0">© 2026 - Site pessoal | Desenvolvido por Maria Eduarda</p>
         </div>
     </footer>
-
-
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
 </body>
