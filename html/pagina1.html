@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,48 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="fundo-site">
-    <!--    Estrutura do menu Responsivo com a "Logo" -->
-    <header class="header">
-        <a href="#" class="logo">SOBRE MIM</a>
-        <!-- Menu hamburguer -->
-        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-    </header>
-   <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script> 
+    <!-- Menu de Navegação -->
+    <!-- Classes prontas do Bootstrap -->
+    <!--Navbar-personalizada é uma estilização persolalizada -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-personalizada"> 
+        <div class="container">
+            <!-- Class pronta para destacar a "logo" -->
+            <a class="navbar-brand" href="#inicio">SOBRE MIM</a>
+            <!-- navbar-toggler-icon é uma tag pronta -->
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"  
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false" aria-label="Abrir menu de navegação">
+                <!-- Class pronta que cria o menu hamburguer (as três) -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apresentacao">Apresentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#familia">Minha Família</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim do Menu de Navegação -->
+
+    
+    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
 </body>
+
 </html>
