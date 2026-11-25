@@ -13,17 +13,13 @@
     <!-- Menu de Navegação -->
     <!-- Classes prontas do Bootstrap -->
     <!--Navbar-personalizada é uma estilização persolalizada -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-personalizada"> 
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-personalizada">
         <div class="container">
             <!-- Class pronta para destacar a "logo" -->
             <a class="navbar-brand" href="#inicio">SOBRE MIM</a>
             <!-- navbar-toggler-icon é uma tag pronta -->
-            <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse"  
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false" aria-label="Abrir menu de navegação">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
                 <!-- Class pronta que cria o menu hamburguer (as três) -->
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -105,10 +101,90 @@
             <span class="visually-hidden">Próximo</span>
         </button>
     </div>
-
-    <!-- Sessão 1 -->
-     
-    
+    <!-- Seção 1- Apresentação -->
+    <section id="apresentacao" class="secao-apresentacao">
+        <!-- Container do Bootstrap -->
+        <div class="container">
+            <!-- Título da seção (class personalizada) -->
+            <h2 class="titulo-secao">Apresentação</h2>
+            <!-- Card Bootstrap -->
+            <div class="card card-apresentacao">
+                <!-- Linha Bootstrap:organiza imagem e texto lado a lado -->
+                <div class="row g-0 align-items-center">
+                    <!-- Coluna da imagem (ocupa 5 das 12) -->
+                    <div class="col-md-5">
+                        <!-- imagem apresentação é uma classe personalizada  -->
+                        <img src="../img/eu2.jpeg" class="img-fluid imagem-apresentacao" alt="Foto de apresentação">
+                    </div>
+                    <!-- Coluna do texto (ocupa 7 das 12) -->
+                    <div class="col-md-7">
+                        <!-- Organiza o conteúdo interno do card -->
+                        <div class="card-body">
+                            <!-- Class pronta para o título do card -->
+                            <h3 class="card-title">Olá, seja bem-vindo(a) ao meu site pessoal!</h3>
+                            <!-- Class pronta para o texto do card -->
+                            <p class="card-text">
+                                Meu nome é Maria Eduarda, tenho 17 anos, 
+                                e sou de Passo Fundo
+                            </p>
+                            <p class="card-text">
+                                Ao longo da minha trajetória, tive a
+                                oportunidade de aprender coisas novas,
+                                conhecer pessoas e viver experiências que
+                                contribuíram para meu crescimento.
+                            </p>
+                            <p class="card-text">
+                                Neste site, compartilho um pouco sobre
+                                quem sou, minha família, meus gostos e
+                                momentos importantes da minha vida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sessão 2 - Minha família -->
+    <section id="familia" class="secao-familia">
+        <!-- Container Bootstrap -->
+        <div class="container">
+            <!-- Título da seção -->
+            <h2 class="titulo-secao">Minha Família</h2>
+            <!-- Card principal -->
+            <div class="card card-familia">
+                <div class="card-body">
+                    <!-- Texto de apresentação -->
+                    <h3 class="card-title">Quem faz parte da minha história</h3>
+                    <p class="card-text">
+                        Essa é minha Família, composta pelo meu pai, minha
+                        mãe e minha irmãzinha mais nova. Eles são desde sempre,
+                        a minha maior base de força, inspiração e cuidado.
+                    </p>
+                    <p class="card-text">
+                        E não posso deixar de apresentar meu maior companheiro: 
+                        o Jake. Pegamos ele muito bebezinho, e desde então se 
+                        tornou parte da nossa família.
+                    </p>
+                    <!-- Linha com as duas imagens -->
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="imagem-familia-container">
+                                <img src="../img/minha-familia.png" class="img-fluid imagem-familia"
+                                    alt="Foto da minha família">
+                                <p class="legenda-familia">Minha família</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="imagem-familia-container">
+                                <img src="../img/jake.jpeg" class="img-fluid imagem-familia" alt="Foto do meu cachorro">
+                                <p class="legenda-familia">Meu companheiro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
 </body>
