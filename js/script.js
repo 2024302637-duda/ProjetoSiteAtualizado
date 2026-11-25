@@ -25,5 +25,4 @@ formulario.addEventListener("submit", function(event) {
     formulario.reset();
 // Remove as indicações de validação anteriores
     formulario.classList.remove("was-validated");
-
 });
