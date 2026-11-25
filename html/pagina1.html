@@ -50,10 +50,8 @@
                 aria-current="true" aria-label="Apresentação">
             </button>
             <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="1"
-                aria-label="Minha Família">
-            </button>
-            <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="2" aria-label="Sobre Mim">
-            </button>
+                aria-label="Minha Família"></button>
+            <button type="button" data-bs-target="#carouselApresentacao" data-bs-slide-to="2" aria-label="Sobre Mim"></button>
         </div>
         <!--Class pronta que agrupa as imagens -->
         <div class="carousel-inner">
@@ -124,19 +122,22 @@
                             <h3 class="card-title">Olá, seja bem-vindo(a) ao meu site pessoal!</h3>
                             <!-- Class pronta para o texto do card -->
                             <p class="card-text">
-                                Meu nome é Maria Eduarda, tenho 17 anos, 
-                                e sou de Passo Fundo
+                                Meu nome é Maria Eduarda Sanagioto, 
+                                tenho 17 anos, e sou de Passo Fundo.
+                                Desde 2024, estudo no IFRS Campus
+                                Sertão, onde sou residente durante
+                                a semana.
                             </p>
                             <p class="card-text">
-                                Ao longo da minha trajetória, tive a
-                                oportunidade de aprender coisas novas,
-                                conhecer pessoas e viver experiências que
-                                contribuíram para meu crescimento.
+                                Ao longo de 3 anos dentro do Campus
+                                tive a oportunidade de conhecer pessoas 
+                                diferentes, amadurecer e aprimorar meus
+                                conhecimentos de mundo.
                             </p>
                             <p class="card-text">
-                                Neste site, compartilho um pouco sobre
-                                quem sou, minha família, meus gostos e
-                                momentos importantes da minha vida.
+                                Neste site, vou compartilhar um pouco 
+                                sobre quem sou, minha família e minhas 
+                                vivências.
                             </p>
                         </div>
                     </div>
@@ -150,41 +151,204 @@
         <div class="container">
             <!-- Título da seção -->
             <h2 class="titulo-secao">Minha Família</h2>
-            <!-- Card principal -->
-            <div class="card card-familia">
-                <div class="card-body">
-                    <!-- Texto de apresentação -->
-                    <h3 class="card-title">Quem faz parte da minha história</h3>
-                    <p class="card-text">
-                        Essa é minha Família, composta pelo meu pai, minha
-                        mãe e minha irmãzinha mais nova. Eles são desde sempre,
-                        a minha maior base de força, inspiração e cuidado.
-                    </p>
-                    <p class="card-text">
-                        E não posso deixar de apresentar meu maior companheiro: 
-                        o Jake. Pegamos ele muito bebezinho, e desde então se 
-                        tornou parte da nossa família.
-                    </p>
-                    <!-- Linha com as duas imagens -->
-                    <div class="row g-4 mt-2">
-                        <div class="col-md-6">
-                            <div class="imagem-familia-container">
-                                <img src="../img/minha-familia.png" class="img-fluid imagem-familia"
-                                    alt="Foto da minha família">
-                                <p class="legenda-familia">Minha família</p>
-                            </div>
+            <!-- Linha que organiza os dois cards -->
+            <div class="row g-4">
+                <!-- PRIMEIRO CARD - FAMÍLIA -->
+                <div class="col-md-6">
+                    <!-- Card Bootstrap -->
+                    <div class="card card-familia h-100">
+                        <!-- Imagem da família -->
+                        <img src="../img/minha-familia.png" class="card-img-top imagem-familia"
+                            alt="Foto da minha família">
+                        <!-- Corpo do card -->
+                        <div class="card-body">
+                            <h3 class="card-title">Minha família</h3>
+                            <p class="card-text">
+                                Essa é minha família, composta pelo meu pai,
+                                minha mãe e minha irmãzinha mais nova.
+                                Eles são, desde sempre, minha maior base
+                                de força, inspiração e cuidado.
+                            </p>
                         </div>
-                        <div class="col-md-6">
-                            <div class="imagem-familia-container">
-                                <img src="../img/jake.jpeg" class="img-fluid imagem-familia" alt="Foto do meu cachorro">
-                                <p class="legenda-familia">Meu companheiro</p>
-                            </div>
+                    </div>
+                </div>
+                <!-- SEGUNDO CARD - JAKE -->
+                <div class="col-md-6">
+                    <!-- Card Bootstrap -->
+                    <div class="card card-familia h-100">
+                        <!-- Imagem do cachorro -->
+                        <img src="../img/jake.jpeg" class="card-img-top imagem-familia" alt="Foto do meu cachorro Jake">
+                        <!-- Corpo do card -->
+                        <div class="card-body">
+                            <h3 class="card-title">Meu companheiro: Jake</h3>
+                            <p class="card-text">
+                                Não posso deixar de apresentar meu maior
+                                companheiro: o Jake. Pegamos ele muito
+                                bebezinho e, desde então, se tornou
+                                parte da nossa família.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Sessão 3 - Sobre Mim -->
+    <section id="sobre" class="secao-sobre">
+        <div class="container">
+            <!-- Título da seção -->
+            <h2 class="titulo-secao">Sobre Mim</h2>
+            <!-- Linha que organiza os três cards -->
+            <div class="row g-4">
+                <!-- CARD 1 - VIAGENS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-sobre h-100">
+                        <!-- Imagem de viagem -->
+                        <img src="../img/viajar.jpeg" class="card-img-top imagem-sobre" alt="Foto de uma viagem">
+                        <div class="card-body">
+                            <h3 class="card-title">Gosto de viajar</h3>
+                            <p class="card-text">
+                                Gosto de conhecer lugares novos, viajar
+                                e descobrir diferentes paisagens.
+                                Cada viagem é uma oportunidade de viver
+                                novas experiências e guardar boas lembranças.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 2 - AMIZADES -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-sobre h-100">
+                        <!-- Duas imagens das amizades -->
+                        <div class="row g-0 imagens-amizades">
+                            <div class="col-6">
+                                <img src="../img/amigos1.jpeg" class="img-fluid" alt="Foto com meus amigos">
+                            </div>
+                            <div class="col-6">
+                                <img src="../img/amigos2.jpeg" class="img-fluid" alt="Outra foto com meus amigos">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Minhas amizades</h3>
+                            <p class="card-text">
+                                Esses são os meus melhores amigos.
+                                São pessoas que tornam os momentos mais
+                                especiais e fazem parte de muitas
+                                lembranças importantes da minha vida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 3 - FORMATURA -->
+                <div class="col-md-12 col-lg-4">
+                    <div class="card card-sobre h-100">
+                        <!-- Imagem da escola/formatura -->
+                        <img src="../img/formatura.jpg" class="card-img-top imagem-sobre"
+                            alt="Foto relacionada à minha formatura">
+                        <div class="card-body">
+                            <h3 class="card-title">Uma nova etapa</h3>
+                            <p class="card-text">
+                                Esse ano eu encerro mais uma etapa
+                                muito importante da minha vida: O
+                                Ensino médio juntamente com meu
+                                Técnico. Foram três anos repletos
+                                de aprendizagem, experiências e
+                                principalmente de muito amadurecimento.
+                                Encerro com meu coração em paz e com
+                                a certeza que construí memórias
+                                para a vida toda!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FORMULÁRIO -->
+    <section id="contato" class="secao-contato">
+        <div class="container">
+            <h2 class="titulo-secao">Entre em Contato</h2>
+            <div class="card card-contato">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Deixe uma mensagem!</h3>
+                    
+                    <!-- Formulário -->
+                    <form id="formContato" novalidate>
+                        <!-- Nome -->
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu nome.
+                            </div>
+                        </div>
+                        <!-- E-mail -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="exemplo@email.com"
+                                required>
+                            <div class="invalid-feedback">
+                                Informe um e-mail válido.
+                            </div>
+                        </div>
+                        <!-- Assunto -->
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" placeholder="Sobre o que deseja falar?"
+                                required>
+                            <div class="invalid-feedback">
+                                Informe o assunto.
+                            </div>
+                        </div>
+                        <!-- Mensagem -->
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem..."
+                                required></textarea>
+                            <div class="invalid-feedback">
+                                Escreva uma mensagem.
+                            </div>
+                        </div>
+                        <!-- Botão -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-enviar">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MODAL DE SUCESSO -->
+    <div class="modal fade" id="modalSucesso" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Mensagem enviada!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>Obrigada pelo contato!</h4>
+                    <p>Seu formulário foi preenchido com sucesso!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-enviar" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container text-center">
+            <h5>Maria Eduarda</h5>
+            <p>Um pouco sobre mim, minha família e minha história.</p>
+            <a href="#inicio">Voltar ao início ↑</a>
+            <hr>
+            <p class="mb-0">© 2026 - Site pessoal | Desenvolvido por Maria Eduarda</p>
+        </div>
+    </footer>
+
+
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
 </body>
